@@ -35,9 +35,9 @@ const Home = () => {
   );
 
   useEffect(() => {
-    Object.values(configs.endpoints).length && dispatch(getInvoicesStart());
-    Object.values(configs.endpoints).length && dispatch(getVendorsStart());
-  }, [dispatch, configs]);
+    dispatch(getInvoicesStart());
+    dispatch(getVendorsStart());
+  }, [dispatch]);
 
   useEffect(() => {
     const handlePaymentOpen = (data: any) => {

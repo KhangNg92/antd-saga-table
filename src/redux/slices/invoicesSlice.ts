@@ -61,7 +61,8 @@ const invoicesSlice = createSlice({
       state.isLoading = false;
       action.payload.invoices.amountDue =
         action.payload.remaining > 0 ? action.payload.remaining : 0;
-      action.payload.invoices.creditBal = Math.abs(action.payload.remaining);
+      action.payload.invoices.creditBal =
+        action.payload.remaining > 0 ? 0 : Math.abs(action.payload.remaining);
 
       const foundInvoiceIndex = state.invoices.findIndex(
         iv =>
