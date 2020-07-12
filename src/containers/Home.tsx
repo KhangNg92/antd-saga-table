@@ -35,8 +35,7 @@ const Home = () => {
   );
 
   useEffect(() => {
-    dispatch(getInvoicesStart());
-    dispatch(getVendorsStart());
+    Promise.all([dispatch(getInvoicesStart()), dispatch(getVendorsStart())]);
   }, [dispatch]);
 
   useEffect(() => {

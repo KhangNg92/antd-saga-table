@@ -10,6 +10,7 @@ import { GlobalStyles } from "./utils/GlobalStyles";
 
 function App() {
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getConfigStart());
   }, [dispatch]);
