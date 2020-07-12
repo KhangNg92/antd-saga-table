@@ -1,0 +1,4 @@
+{
+  "/invoices/*": "/invoices",
+  "/credit/apply": "/credit"
+}
