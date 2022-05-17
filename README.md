@@ -1,6 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## React-Khang
+## Antd + redux-saga + redux-toolkit
 
 In the project directory, you can run:
 
